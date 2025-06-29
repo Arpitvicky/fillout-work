@@ -7,12 +7,12 @@ const config: JestConfigWithTsJest = {
   setupFilesAfterEnv: ["<rootDir>/setupTests.ts"],
 
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1", // if you use path alias
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy", // mock styles
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
   },
 
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
+    "^.+\\.(ts|tsx)$": "babel-jest", // ts-jest needs babel to compile
   },
 };
 

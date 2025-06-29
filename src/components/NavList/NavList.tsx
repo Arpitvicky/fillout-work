@@ -83,12 +83,16 @@ export const NavList = ({
                 <div></div>
                 <div></div>
               </div>
-              {openSettingsIndex === index && <NavItemSettings label={pageTab.label} />}
+              {openSettingsIndex === index && (
+                <NavItemSettings label={pageTab.label} />
+              )}
             </Link>
 
-            <div className={styles.plusButtonWrapper}>
-              <button onClick={() => addPageHandler(index)}>+</button>
-            </div>
+            {index < pageTabs.length - 1 && (
+              <div className={styles.plusButtonWrapper}>
+                <button onClick={() => addPageHandler(index)}>+</button>
+              </div>
+            )}
           </li>
         );
       })}

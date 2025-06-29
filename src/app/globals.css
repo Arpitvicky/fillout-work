@@ -47,7 +47,4 @@ footer {
   position: fixed;
   bottom: 50px;
   left: 50px;
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
 }

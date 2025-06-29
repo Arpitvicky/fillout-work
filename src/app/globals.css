@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --navItem-background-15: rgba(157, 164, 178, 0.15);
+  --navItem-background-35: rgba(157, 164, 178, 0.35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +41,10 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
 }

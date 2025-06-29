@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+}
+
+
+.addPageBtn {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 2px 0px rgb(225, 225, 225);
+  background: white;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:before {
+    content: "+";
+    color: #000;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}

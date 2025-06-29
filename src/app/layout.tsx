@@ -1,7 +1,8 @@
+import { PageNavigation } from "@/components/PageNavigation/PageNavigation";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import styles from "./page.module.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <main className={styles.main}>{children}</main>
+        <footer>
+          <PageNavigation />
+        </footer>
       </body>
     </html>
   );
